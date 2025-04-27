@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schema Generator - Ngerank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Schema Generator</h1>
+        <label for="schemaType">Type:</label>
+        <select id="schemaType" onchange="showForm()">
+            <option value="">-- Select --</option>
+            <option value="article">Article</option>
+            <option value="breadcrumb">BreadcrumbList</option>
+            <option value="localbusiness">Local Business</option>
+            <option value="organization">Organization</option>
+            <option value="product">Product</option>
+            <option value="service">Service</option>
+            <option value="website">Website</option>
+        </select>
+
+        <div id="breadcrumbsContainer">
+
+        </div>
+
+
+
+        <div id="formContainer"></div>
+
+        <div class="output">
+            <h2>Result:</h2>
+            <textarea id="outputSchema" rows="10" readonly></textarea>
+            <button onclick="copySchema()">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built by <a href="https://ngerank.id" target="_blank">Ngerank</a> — Built to Rank.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
